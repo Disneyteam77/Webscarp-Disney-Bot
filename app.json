@@ -1,7 +1,7 @@
 {
-    "name": "WebScrap Bot",
-    "description": "Bot can Sends website source ",
-    "repository": "https://github.com/lntechnical2/webscrap-bot",
+    "name": "WebScrap-Disney-Bot",
+    "description": "Bot can Send website source ",
+    "repository": "https://github.com/Disneyteam77/webscrap-Disney-bot",
     "keywords": ["webscrao", "pyrogram", "telegram bot"],
     "env": {
         "TOKEN": {
