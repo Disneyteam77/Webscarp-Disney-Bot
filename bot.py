@@ -23,16 +23,16 @@ app = Client(
     
 @app.on_message(filters.command(['start']))
 def start(client, message):
-            message.reply_text(text =f"Hello **{message.from_user.first_name }** \n\n **Iam Simple web scraper** 🕸 \n __SEND ME WEBSITE LINK AND GET THAT WEB SOURCE__",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(
+            message.reply_text(text =f"Hello **{message.from_user.first_name }** \n\n **I Am Disney Team Web Scraper BOT {DTWSB}™️ ** 😊 \n __Send Me Any Website Link And Get That Web Site Source \n Feel Free To Report Bugs Or Any Other Problems Or Any Feature Adding In @Disneyteamchat ❤__",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ],
-                 [InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]          ]        ) )
+                    InlineKeyboardButton("👨‍🔧Updates Channel👨‍🔧" ,url="https://t.me/Disneygrou") ],
+                 [InlineKeyboardButton("👨‍💻Developer👨‍💻", url="https://t.me/Doreamonfans1") ]          ]        ) )
 
 
 @app.on_message(filters.regex("^(http|https|www\.)"))
 def start(client, message):
-    ms = message.reply_text("```Trying to web scrap .........```", reply_to_message_id = message.message_id)
+    ms = message.reply_text("Proccesing To Web Scrap👷‍♂️ .........", reply_to_message_id = message.message_id)
     msg_id = message.chat.id
     html_url = message.text
     try:
@@ -45,7 +45,7 @@ def start(client, message):
     f.write(str(soup.prettify()))
     f.close()
 
-    caption = "Here Your Web Source"
+    caption = "Here Is Your Web Source🙃"
     try:
     	app.send_document(message.chat.id ,document = f"{msg_id}.txt",caption = caption)
     except ValueError as ve:
